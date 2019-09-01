@@ -15,6 +15,14 @@ body {
   //background: pink;
 }
 
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
 .navbar {
   font-weight: 100;
   position: absolute;
@@ -38,9 +46,11 @@ body {
   background: url("../images/main.jpeg") bottom center / cover no-repeat;
   min-height: 750px;
   position: relative;
+
   #header {
     z-index: 2;
   }
+
   #overlay {
     background: rgba(0, 0, 0, 0.2);
     position: absolute;
@@ -60,6 +70,16 @@ body {
   }
 }
 
+#quotes {
+  i {
+    opacity: 0.3;
+  }
+}
+
+#footer {
+  font-weight: 100;
+}
+
 @media (max-width: 768px) {
   .navbar {
     background: #1f1f1f;
@@ -72,11 +92,5 @@ body {
     h1 {
       font-size: 4rem;
     }
-  }
-}
-
-#quotes {
-  i {
-    opacity: 0.3;
   }
 }

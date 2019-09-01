@@ -24,9 +24,9 @@
     <title>Babywatchers</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-md navbar-dark">
       <a href="#" class="navbar-brand">
-        <h3 class="mb-0">Babywatchers</h3>
+        <h3 class="mb-0">Aurora Grove</h3>
       </a>
       <button
         class="navbar-toggler"
@@ -38,19 +38,25 @@
       <div class="collapse navbar-collapse" id="mainNavbar">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a href="#" class="nav-link">Home</a>
+            <a href="#showcase" class="nav-link">Home</a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">About</a>
+            <a href="#icons" class="nav-link">About</a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">Explore</a>
+            <a href="#explore" class="nav-link">Explore</a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">Contact</a>
+            <a href="#newsletter" class="nav-link">Contact</a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">Book</a>
+            <a
+              href="#"
+              class="nav-link"
+              data-toggle="modal"
+              data-target="#bookingModal"
+              >Book</a
+            >
           </li>
         </ul>
       </div>
@@ -61,16 +67,25 @@
       class="d-flex justify-content-center align-items-center"
     >
       <div id="overlay"></div>
-      <div id="header" class="container text-white text-center">
-        <h3 class="display-5 mb-0">Modern Camping</h3>
-        <h1 class="display-1">Aurora Grove</h1>
-        <p class="lead d-none d-md-block">juttu jätkub pikemaks</p>
-        <button id="book" class="btn btn-lg btn-primary px-5">Book Now</button>
+      <div id="header" class=" text-white text-center">
+        <h3 class="display-5 mb-0">MODERN CAMPING</h3>
+        <h1 class="display-1">AURORA GROVE</h1>
+        <p class="lead d-none d-md-block">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, hic?
+        </p>
+        <button
+          id="book"
+          class="btn btn-lg btn-primary px-5"
+          data-toggle="modal"
+          data-target="#bookingModal"
+        >
+          BOOK NOW
+        </button>
       </div>
     </section>
 
-    <section>
-      <div class="container text-center mt-5">
+    <section id="icons">
+      <div class=" text-center mt-5">
         <h2>You Show Up, We Pitch The Tent</h2>
         <div class="row">
           <div class="col-md-4 p-3">
@@ -116,8 +131,8 @@
       </div>
     </section>
 
-    <section>
-      <div class="container text-center mt-2 p-3">
+    <section id="explore">
+      <div class=" text-center mt-2 p-3">
         <h3>
           WE'VE CREATED A CAMPING EXPERIENCE THAT's TURN-KEY AND HASSLE FREE.
         </h3>
@@ -155,59 +170,40 @@
               </div>
             </div>
           </div>
-
-          <div class="col-md-6">
-            <div class="card">
-              <img src="images/winter.png" alt="" class="card-img-top" />
-              <div class="card-body">
-                <h2 class="card-title text-primary">EXPERIENCE</h2>
-                <p class="card-text">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Quasi ad numquam odit aspernatur, rerum dolore! Mollitia,
-                  totam. Quae, fugit possimus!
-                </p>
-                <a href="" class="btn btn-lg btn-outline-primary"
-                  >Go Somewhere</a
-                >
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </section>
 
-    <section class="quotes">
-      <div class="container text-center mt-4">
-        <h3>What our happy campers are saying</h3>
+    <section id="quotes">
+      <div class=" text-center mt-4">
+        <h3>WHAT OUR HAPPY CAMPERS ARE SAYING</h3>
         <div class="row">
           <div class="col-md-4 my-2">
             <i class="fas fa-quote-left fa-2x text-primary mb-3"></i>
             <blockquote class="blockquote">
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Pariatur, voluptate?
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
+                posuere erat a ante.
               </p>
               <footer class="blockquote-footer">Mark Twain</footer>
             </blockquote>
           </div>
-
           <div class="col-md-4 my-2">
             <i class="fas fa-quote-left fa-2x text-primary mb-3"></i>
             <blockquote class="blockquote">
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Pariatur, voluptate?
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
+                posuere erat a ante.
               </p>
               <footer class="blockquote-footer">Mark Twain</footer>
             </blockquote>
           </div>
-
           <div class="col-md-4 my-2">
             <i class="fas fa-quote-left fa-2x text-primary mb-3"></i>
             <blockquote class="blockquote">
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Pariatur, voluptate?
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
+                posuere erat a ante.
               </p>
               <footer class="blockquote-footer">Mark Twain</footer>
             </blockquote>
@@ -217,7 +213,7 @@
     </section>
 
     <section>
-      <div class="container mt-5">
+      <div class=" mt-5">
         <div class="row">
           <div class="col-lg-7 mb-3">
             <div id="mainCarousel" class="carousel slide" data-ride="carousel">
@@ -295,7 +291,185 @@
         </div>
       </div>
     </section>
-    <!--div-- class="container">
+
+    <section>
+      <div class=" text-center mt-5">
+        <h3>WHAt OTHERS ARE SAYING</h3>
+        <h5 class="text-primary">#AURORAGROVE</h5>
+        <div class="row mt-4">
+          <div class="col-6 col-lg-3 mb-4">
+            <img src="images/gallery/social1.png" alt="" class="img-fluid" />
+          </div>
+
+          <div class="col-6 col-lg-3 mb-4">
+            <img src="images/gallery/social2.png" alt="" class="img-fluid" />
+          </div>
+
+          <div class="col-6 col-lg-3 mb-4">
+            <img src="images/gallery/social3.png" alt="" class="img-fluid" />
+          </div>
+
+          <div class="col-6 col-lg-3 mb-4">
+            <img src="images/gallery/social4.png" alt="" class="img-fluid" />
+          </div>
+
+          <div class="col-6 col-lg-3 mb-4">
+            <img src="images/gallery/social5.png" alt="" class="img-fluid" />
+          </div>
+
+          <div class="col-6 col-lg-3 mb-4">
+            <img src="images/gallery/social6.png" alt="" class="img-fluid" />
+          </div>
+
+          <div class="col-6 col-lg-3 mb-4">
+            <img src="images/gallery/social7.png" alt="" class="img-fluid" />
+          </div>
+
+          <div class="col-6 col-lg-3 mb-4">
+            <img src="images/gallery/social8.png" alt="" class="img-fluid" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class=" text-center mt-4">
+        <i class="fas fa-quote-left fa-2x text-primary mb-3"></i>
+        <blockquote class="blockquote">
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque,
+            veniam dolorum quidem illo eos ipsam voluptatem officiis quas
+            impedit fugit, maxime numquam placeat, odio ducimus vel voluptas
+            assumenda architecto optio sit non aperiam harum qui. Facilis
+            mollitia atque nostrum maiores.
+          </p>
+          <footer class="blockquote-footer">Mark Twain</footer>
+        </blockquote>
+      </div>
+    </section>
+
+    <section id="newsletter" class="bg-dark">
+      <div class=" text-white text-center py-5">
+        <p class="lead">JOIN OUR NEWSLETTER FOR DEALS AND UPDATES AND OFFERS</p>
+        <div class="row justify-content-center">
+          <div class="col-10 col-sm-8 col-md-6 col-lg-4">
+            <form action="" class="form-inline">
+              <div class="input-group">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Your Email"
+                  id=""
+                />
+                <div class="input-group-append">
+                  <button class="btn btn-primary">Join Now</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="footer" class="p-3 bg-secondary">
+      <ul
+        class="nav text-center justify-content-center flex-column flex-sm-row"
+      >
+        <li class="nav-item">
+          <a href="#" class="nav-link text-white">FAQ</a>
+        </li>
+        <li class="nav-item">
+          <a href="#explore" class="nav-link text-white">EXPERIENCE</a>
+        </li>
+        <li class="nav-item">
+          <a href="#explore" class="nav-link text-white">EXPLORE</a>
+        </li>
+        <li class="nav-item">
+          <a href="#newsletter" class="nav-link text-white">CONTACT</a>
+        </li>
+        <li class="nav-item">
+          <a
+            href=""
+            class="nav-link text-white"
+            data-toggle="modal"
+            data-target="#bookingModal"
+            >BOOK NOW</a
+          >
+        </li>
+      </ul>
+    </section>
+
+    <div class="modal" id="bookingModal" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">New Booking</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>
+              Please fill out the form below we'll get back to your as soon as
+              possbile
+            </p>
+            <form>
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  placeholder="name@example.com"
+                />
+              </div>
+              <div class="form-group">
+                <label for="adults">Number of Adults</label>
+                <select class="form-control" name="" id="adults">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="childen">Number of Children</label>
+                <select class="form-control" name="" id="children">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="requests">Additional Requests</label>
+                <textarea
+                  id="requests"
+                  rows="3"
+                  class="form-control"
+                ></textarea>
+              </div>
+            </form>
+          </div>
+
+          <div class="modal-footer">
+            <button class="btn btn-primary">Submit request</button>
+            <button class="btn btn-secondary" data-dismiss="modal">
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--div class="container">
       <h1 class="display-3 text-center text-primary">Custom stuff</h1>
       <button class="btn btn-lg btn-info">INFO</button>
       <button class="btn btn-lg btn-warning">WARNING</button>
@@ -304,7 +478,7 @@
       <button class="btn btn-lg btn-success">SUCCESS</button>
       <button class="btn btn-lg btn-secondary">SECONDARY</button>
       <button class="btn btn-lg btn-primary">PRIMARY</button>
-    </!--div-->
+    </div-->
 
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
